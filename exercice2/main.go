@@ -56,7 +56,7 @@ func main() {
 	for cpt <= nombre {
 		fmt.Println("Note", cpt, ":")
 		fmt.Scan(&note)
-		if note >= 0 || note <= 20 {
+		if note >= 0 && note <= 20 {
 			lst = append(lst, note)
 			somme += note
 		} else {
